@@ -34,47 +34,38 @@
       </div>
     </nav>
 
-    <!-- PORTFOLIO TITLE -->
+    <!-- PAGE TITLE -->
     <div class="container mt-5 text-center">
-      <h2 class="text-pink mb-4"><i class="fa fa-camera-retro me-2"></i>Photography Portfolio</h2>
-      <p class="mb-5">A curated collection of moments captured through my lens. From nature to cityscapes, each photo tells its own story.</p>
+      <h2 class="text-pink mb-3"><i class="fa fa-camera-retro me-2"></i>Photography Portfolio</h2>
+      <p>A small collection of highlights from my photography adventures. Photos taken with a Canon EOS R100.</p>
     </div>
 
-    <!-- PORTFOLIO GRID -->
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <!-- CAROUSEL -->
+    <div class="container mt-4 mb-5">
+      <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm">
 
-        <!-- CARD TEMPLATE (repeat up to 16 times) -->
-        <div class="col">
-          <div class="card h-100 shadow-sm border-0">
-            <img src="photos/photo1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text text-center">Sunset in Santorini</p>
+          <!-- Slides -->
+          <div class="carousel-item active">
+            <img src="photo 1" class="d-block w-100" alt="photo desc" />
+            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 rounded p-2">
+              <h5 class="text-pink">bla bla</h5>
+              <p>desc.</p>
             </div>
           </div>
+
+
         </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm border-0">
-            <img src="photos/photo2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text text-center">Brooklyn Bridge at Dawn</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copy and update these cards up to 16 total -->
-        <!-- Example:
-        <div class="col">
-          <div class="card h-100 shadow-sm border-0">
-            <img src="photos/photo3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text text-center">Caption for photo 3</p>
-            </div>
-          </div>
-        </div>
-        -->
-
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
 
